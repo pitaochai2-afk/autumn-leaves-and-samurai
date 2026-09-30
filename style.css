@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background-color: #7a7a7a;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: -apple-system, sans-serif;
+  position: relative;
+  height: 100vh;
+}
+
+.samurai-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: auto;
+  max-width: none;
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 9, 8, 0.95) 0%,
+    rgba(10, 9, 8, 0.75) 35%,
+    rgba(10, 9, 8, 0.4) 65%,
+    rgba(10, 9, 8, 0.1) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#hint {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 10;
+}
+
+#audio-notice {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  color: #61564d;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 10;
+}
